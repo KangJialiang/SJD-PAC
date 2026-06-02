@@ -1,0 +1,22 @@
+# SJD-PAC runtime dependencies (tested with Python 3.10, CUDA 12.4).
+# Install the torch build matching your CUDA, e.g.:
+#   pip install torch==2.5.1+cu124 torchvision==0.20.1+cu124 \
+#       --extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.5.1
+torchvision==0.20.1
+transformers==4.47.1
+sentencepiece==0.2.0
+accelerate==1.2.1
+
+numpy==1.26.3
+pandas==2.2.3
+Pillow==10.2.0
+einops==0.8.0
+PyYAML==6.0.2
+tqdm==4.67.1
+absl-py==2.1.0
+
+# Evaluation metrics (FID / IS / CLIP) and the COCO dataset path
+torchmetrics==1.6.1
+pytorch-fid==0.3.0
+pycocotools==2.0.8
